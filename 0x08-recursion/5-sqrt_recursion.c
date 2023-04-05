@@ -4,20 +4,20 @@
 * Description - A function that confirms the natural
 * square root of an input
 * *@num: the function accepts an input saved into num
-* *@squared: the function accepts an input saved into squared
+* *@sqrd: the function accepts an input saved into squared
 * Return: Success (integer)
 */
-int is_square_root(int num, int squareroot)
+int is_square_root(int num, int sqrd)
 {
-	if ((squareroot * squareroot) == num)
+	if ((sqrd * sqrd) == num)
 	{
-		return (squareroot);
+		return (sqrd);
 	}
-	else if (squareroot == num / 2)
+	else if (sqrd == num / 2)
 	{
 		return (-1);
 	}
-	return (is_square_root(num, squareroot + 1));
+	return (is_square_root(num, sqrd + 1));
 }
 
 
@@ -30,7 +30,7 @@ int is_square_root(int num, int squareroot)
 */
 int _sqrt_recursion(int n)
 {
-	int squareroot = 0;
+	int sqrd = 0;
 
 	if (n < 0)
 	{
@@ -40,5 +40,5 @@ int _sqrt_recursion(int n)
 	{
 		return (1);
 	}
-	return (is_square_root(n, squareroot));
+	return (is_square_root(n, sqrd));
 }
