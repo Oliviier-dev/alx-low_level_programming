@@ -4,7 +4,7 @@
  * malloc_checked - allocates memory.
  * @b: amount of bytes.
  *
- * Return: pointer to the allocated memory.
+ * Return: A pointer to the allocated memory.
  * if malloc fails, status value is equal to 98.
  */
 
